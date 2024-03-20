@@ -5,13 +5,31 @@ Este es un proyecto base que utiliza Nightwatchjs como framework base integrado 
 
 ## Instalacion
 
+```
 PRIMERO INSTALAR python 3.11
+```
 INSTALAR PIP
+```
 entrar carpeta allure_docx
+```
 pip install -r .\requirements.txt
+```
 pip install pyinstaller
+```
 build_exe.cmd #para Windows
+```
 python .\allure-docx\src\allure_docx\commandline.py --help
+```
+
+
+## Para generar el informe allure revisar los comandos en el package.json
+
+
+## Para el uso de datos a partir de un excel crear:
+```
+carpeta "data/" <- dentro colocar los excel con los datos de prueba
+```
+
 
 ## Como usarlo
 
