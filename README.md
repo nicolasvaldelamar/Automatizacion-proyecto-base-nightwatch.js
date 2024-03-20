@@ -1,5 +1,5 @@
 
-# Proyecto base usando Nightwatchjs + POM + cucumberJS + Allure + Generacion de reportes en PDF y WORD
+# Proyecto base usando Nightwatchjs + POM + cucumberJS + Allure + Reportes en PDF y WORD
 
 Este es un proyecto base que utiliza Nightwatchjs como framework base integrado con cucumber para el lenguaje gherkins y allure report para el manejo de reportes y evidencias, permite ademas la utilizacion de datos de prueba apartir de archivos excel y/o base de datos y la generacion de reportes en PDF Y WORD.
 
