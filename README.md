@@ -8,15 +8,21 @@ Este es un proyecto base que utiliza Nightwatchjs como framework base integrado 
 ```
 PRIMERO INSTALAR python 3.11
 ```
+```
 INSTALAR PIP
+```
 ```
 entrar carpeta allure_docx
 ```
+```
 pip install -r .\requirements.txt
+```
 ```
 pip install pyinstaller
 ```
+```
 build_exe.cmd #para Windows
+```
 ```
 python .\allure-docx\src\allure_docx\commandline.py --help
 ```
