@@ -1,0 +1,38 @@
+{
+  "name": "Automatizacion-proyecto-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nightwatch --require _extra_setup.js --format ./reporter-allure.js --format html:tests_output/cucumber-report.html --parallel 5",
+    "test-tag": "npx nightwatch --require _extra_setup.js --format ./reporter-allure.js --format html:tests_output/cucumber-report.html --tags @lorem --parallel 10",
+    "test-produccion": "npx nightwatch --require _extra_setup.js --format ./reporter-allure.js --format html:tests_output/cucumber-report.html --tags @lorem --parallel 10",
+    "test-qa": "npx nightwatch --require _extra_setup.js --format ./reporter-allure.js --format html:tests_output/cucumber-report.html --tags @lorem --parallel 10",
+    "test-cmd": "npx nightwatch --require _extra_setup.js -f @cucumber/pretty-formatter --format html:tests_output/cucumber-report.html --parallel 5",
+    "allure-generate": "node node_modules/allure-commandline/bin/allure generate -c",
+    "allure-open": "node node_modules/allure-commandline/bin/allure open",
+    "generate-example": "node setup/add_examples_to_features.js",
+    "generate-docx": "python ./allure-docx/src/allure_docx/commandline.py allure-results report_tests.docx",
+    "generate-pdf": "python ./allure-docx/src/allure_docx/commandline.py --pdf allure-results report_tests.docx"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.0.0",
+    "allure-cucumberjs": "^2.4.0",
+    "allure-js-commons": "^2.4.0",
+    "chromedriver": "^119.0.0",
+    "nightwatch": "^3.2.1"
+  },
+  "overrides": {
+    "@cucumber/cucumber": "^10.0.0"
+  },
+  "dependencies": {
+    "@cucumber/pretty-formatter": "^1.0.0",
+    "allure-commandline": "^2.24.0",
+    "dotenv": "^16.3.1",
+    "replace-in-file": "^7.0.2",
+    "simple-excel-to-json-u": "^2.3.2"
+  }
+}
